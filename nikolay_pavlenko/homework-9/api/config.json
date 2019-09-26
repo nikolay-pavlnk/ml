@@ -1,0 +1,28 @@
+{
+"FEATURES": {"NUM_FEATURES": ["traffic", "ecology", "security", "recreation", "infrastructure", "floor", "rooms_count",
+				"main_square", "living_square", "kitchen_square", "floors_count"],
+"STR_FEATURES": ["street", "city", "district", "wall_type", "heating", "seller"],
+"CAT_FEATURES": ["primary", "secondary", "loan", "swap", "bargaining", "verified_apartment"]}, 
+
+"ADDITIONAL_FEATURES": ["photos"],
+
+"UTIL_MODELS": {
+	"label_encoder_cat": "models/label_encoder_cat_v1.pickle",
+	"one_hot": "models/onehot_v1.pickle",
+},
+
+"NEURAL_UTIL_MODELS": {
+	"label_encoder_cat": "models/label_encoder_cat_v1.pickle",
+	"one_hot": "models/onehot_v1.pickle",
+	"minmax": "models/minmax_v1.pickle"
+},
+
+"MODELS": {
+"grad_boost": "models/catboost_v1.pickle",
+"decision_tree": "models/decision_tree_v1.pickle",
+"neural_network": "models/neural_network_v1.pickle",
+"embedding": "models/emb_v1.pickle",
+"kmean": "models/kmeans_v1.pickle"
+}
+}
+
